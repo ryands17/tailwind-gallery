@@ -26,11 +26,11 @@ const Card = ({ image }: CardProps) => {
           </li>
         </ul>
 
-        <div className="py-6">
+        <div className="py-6 flex space-x-4">
           {tags.map(tag => (
             <span
               key={tag}
-              className="inline-block rounded-2xl bg bg-gray-200 mr-2 text-gray-700 px-2 py-2 text-sm font-semibold"
+              className="rounded-2xl bg bg-gray-200 text-gray-700 px-2 py-2 text-sm font-semibold"
             >
               #{tag}
             </span>
