@@ -1,23 +1,27 @@
-import logo from './logo.svg'
-import './App.css'
+import * as React from 'react'
+import Card from 'components/Card'
+import { Images } from 'types'
 
 function App() {
+  let [images, setImages] = React.useState<Images>([])
+  let [query, setQuery] = React.useState('')
+
+  React.useEffect(() => {
+    let URL = `https://pixabay.com/api/?key=${process.env.REACT_APP_PIXABAY_API_KEY}&q=${query}&image_type=photo`
+
+    fetch(URL)
+      .then(res => res.json())
+      .then(res => setImages(res.hits))
+      .catch(console.error)
+  }, [query])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link text-3xl"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container mx-auto">
+      <div className="grid grid-cols-3 gap-4">
+        {images.map(image => (
+          <Card key={image.id} image={image} />
+        ))}
+      </div>
     </div>
   )
 }
