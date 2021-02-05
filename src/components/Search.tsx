@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { useHotkeys } from 'react-hotkeys-hook'
 
 type SearchProps = {
   onSubmit: (val: string) => void
@@ -7,6 +8,10 @@ type SearchProps = {
 const Search = ({ onSubmit }: SearchProps) => {
   let [search, setSearch] = React.useState('')
   let searchRef = React.useRef<HTMLInputElement>(null)
+  useHotkeys('ctrl+/', () => {
+    searchRef.current?.focus()
+    searchRef.current?.select()
+  })
 
   return (
     <div className="max-w-sm rounded overflow-hidden my-10 mx-auto">
@@ -37,7 +42,7 @@ const Search = ({ onSubmit }: SearchProps) => {
         </div>
       </form>
       <div className="text-sm flex justify-center mt-2 text-gray-500 font-semibold">
-        Press <kbd className="px-2">/</kbd> to search
+        Press <kbd className="px-2">ctrl + /</kbd> to search
       </div>
     </div>
   )

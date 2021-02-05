@@ -32,7 +32,7 @@ const Card = ({ image }: CardProps) => {
               key={tag}
               className="rounded-2xl bg bg-gray-200 text-gray-700 px-2 py-2 text-sm font-semibold"
             >
-              #{tag}
+              #{tag.split(' ')[0]}
             </span>
           ))}
         </div>
