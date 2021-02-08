@@ -1,0 +1,36 @@
+{
+  "extends": ["config:base"],
+  "masterIssue": true,
+  "schedule": ["every 2 weeks on Friday"],
+  "ignoreDeps": ["tailwindcss", "postcss", "autoprefixer"],
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "major",
+        "minor",
+        "patch",
+        "pin",
+        "digest",
+        "lockFileMaintenance",
+        "rollback",
+        "bump"
+      ],
+      "automerge": true
+    },
+    {
+      "packagePatterns": ["react", "react-dom", "react-scripts"],
+      "groupName": "react",
+      "automerge": true
+    },
+    {
+      "packagePatterns": ["^@types/"],
+      "groupName": "ts-types",
+      "automerge": true
+    },
+    {
+      "packagePatterns": ["^@testing-library", "jest", "cypress"],
+      "groupName": "testing",
+      "automerge": true
+    }
+  ]
+}
