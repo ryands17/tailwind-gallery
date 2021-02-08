@@ -34,7 +34,7 @@ jobs:
         run: npm i -g serve & yarn build
 
       - name: Run E2E Tests
-        uses: cypress-io/github-action@v1
+        uses: cypress-io/github-action@v2
         with:
           record: false
           env: HOST=http://localhost:5000
