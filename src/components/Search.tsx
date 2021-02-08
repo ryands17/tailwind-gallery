@@ -8,13 +8,14 @@ type SearchProps = {
 const Search = ({ onSubmit }: SearchProps) => {
   let [search, setSearch] = React.useState('')
   let searchRef = React.useRef<HTMLInputElement>(null)
+
   useHotkeys('ctrl+/', () => {
     searchRef.current?.focus()
     searchRef.current?.select()
   })
 
   return (
-    <div className="max-w-sm rounded overflow-hidden my-10 mx-auto">
+    <div className="max-w-sm rounded overflow-hidden my-10 mx-auto search-box">
       <form
         onSubmit={e => {
           e.preventDefault()

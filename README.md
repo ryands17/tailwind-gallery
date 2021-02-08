@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Prerequisites
 
-- Rename `.env.example` to `.env.local` and add your personal [Pixabay](https://pixabay.com/) API key.
+- Rename `.env.example` to `.env` and add your personal [Pixabay](https://pixabay.com/) API key.
 
 ## Available Scripts
 

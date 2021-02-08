@@ -33,7 +33,7 @@ function App() {
       {loading ? (
         <MessageDisplay>Loading...</MessageDisplay>
       ) : (
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-3 gap-4 gallery">
           {images.map(image => (
             <Card key={image.id} image={image} />
           ))}
