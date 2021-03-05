@@ -59,7 +59,7 @@
     "@craco/craco": "6.1.1",
     "cypress": "6.5.0",
     "dotenv-cli": "4.0.0",
-    "husky": "5.0.9",
+    "husky": "5.1.3",
     "lint-staged": "10.5.4",
     "prettier": "2.2.1"
   },
