@@ -61,7 +61,7 @@
     "dotenv-cli": "4.0.0",
     "husky": "6.0.0",
     "lint-staged": "11.0.0",
-    "prettier": "2.3.0"
+    "prettier": "2.3.1"
   },
   "prettier": {
     "semi": false,
