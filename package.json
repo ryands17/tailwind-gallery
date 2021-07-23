@@ -59,7 +59,7 @@
     "@craco/craco": "6.2.0",
     "cypress": "8.0.0",
     "dotenv-cli": "4.0.0",
-    "husky": "7.0.1",
+    "husky": "^7.0.0",
     "lint-staged": "11.1.0",
     "prettier": "2.3.2"
   },
@@ -67,11 +67,6 @@
     "semi": false,
     "singleQuote": true,
     "arrowParens": "avoid"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "lint-staged": {
     "*.{ts,tsx,js,json,css,md}": "prettier --write"

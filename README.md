@@ -1,5 +1,7 @@
 # Tailwind Image Gallery
 
+[![Build Status](https://github.com/ryands17/tailwind-gallery/actions/workflows/main.yml/badge.svg)](https://github.com/ryands17/tailwind-gallery/actions/workflows/main.yml)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and based on [this](https://www.youtube.com/watch?v=FiGmAI5e91M) tutorial by Brad Traversy.
 
 ## Prerequisites
