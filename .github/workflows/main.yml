@@ -14,7 +14,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Use Node 14
+      - name: Setup Node
         uses: actions/setup-node@v2
         with:
           node-version: 14.x
@@ -37,6 +37,6 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           record: false
-          env: HOST=http://localhost:5000
+          env: HOST=http://localhost:3000
           start: serve -s build
-          wait-on: http://localhost:5000
+          wait-on: http://localhost:3000
