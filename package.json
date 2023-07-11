@@ -33,7 +33,7 @@
     "react-hotkeys-hook": "3.4.7",
     "react-scripts": "4.0.3",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
-    "typescript": "4.9.5",
+    "typescript": "5.1.6",
     "web-vitals": "2.1.4"
   },
   "eslintConfig": {
