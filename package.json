@@ -60,7 +60,7 @@
     "cypress": "9.7.0",
     "dotenv-cli": "7.3.0",
     "husky": "8.0.3",
-    "lint-staged": "13.2.3",
+    "lint-staged": "14.0.1",
     "prettier": "3.0.3"
   },
   "prettier": {
