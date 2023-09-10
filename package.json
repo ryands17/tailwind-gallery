@@ -58,7 +58,7 @@
   "devDependencies": {
     "@craco/craco": "6.4.5",
     "cypress": "9.7.0",
-    "dotenv-cli": "7.2.1",
+    "dotenv-cli": "7.3.0",
     "husky": "8.0.3",
     "lint-staged": "13.2.3",
     "prettier": "3.0.3"
