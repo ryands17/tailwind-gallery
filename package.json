@@ -34,7 +34,7 @@
     "react-scripts": "4.0.3",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "typescript": "5.9.3",
-    "web-vitals": "3.5.2"
+    "web-vitals": "5.1.0"
   },
   "eslintConfig": {
     "extends": [
